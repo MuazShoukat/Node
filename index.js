@@ -27,21 +27,22 @@ app.get("/", async (req, res) => {
         console.log(responseData);
         res.send(response.data);
         setTimeout(() => {
-          const filePath = "response.json";
+        //   const filePath = "response.json";
 
-          // Write the data to the file
-          fs.writeFile(
-            filePath,
-            JSON.stringify(responseData, null, 2),
-            (err) => {
-              if (err) {
-                console.error("Error writing to file:", err);
-              } else {
-                console.log("Data has been saved to", filePath);
-              }
-            }
-          );
-        }, 60000);
+        //   // Write the data to the file
+        //   fs.writeFile(
+        //     filePath,
+        //     JSON.stringify(responseData, null, 2),
+        //     (err) => {
+        //       if (err) {
+        //         console.error("Error writing to file:", err);
+        //       } else {
+        //         console.log("Data has been saved to", filePath);
+        //       }
+        //     }
+        //   );
+        // }, 60000);
+          console.log("Hello World after 1 minute");
       })
       .catch((error) => {
         console.error("Error making POST request:", error);
