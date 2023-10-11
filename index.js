@@ -41,8 +41,9 @@ app.get("/", async (req, res) => {
         //       }
         //     }
         //   );
-        // }, 60000);
           console.log("Hello World after 1 minute");
+        }, 60000);
+          
       })
       .catch((error) => {
         console.error("Error making POST request:", error);
